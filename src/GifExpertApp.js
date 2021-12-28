@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import AddCategory from './components/AddCategory'
 import GifGrid from './components/GifGrid'
+// Se ha tenido que agregar un default prop para poder realizar las pruebas, así es mucho más sencillo manejar los componentes también
+const GifExpertApp = ({defaultCategories = []}) => {
 
-const GifExpertApp = () => {
-
-    const arrayCategories = ['EVANGELION']
-
-    const [categories, setCategories] = useState(arrayCategories)
+    const [categories, setCategories] = useState(defaultCategories)
 
     // const handleAdd = () => {
     //     // Para usar setCategories se necesita utilizar el operador spread del array que NO hay que mutar, y con ese operador crea una copia de ese array u objeto, según lo que se haya creado, se necesitan las llaves [] para decirle que es un array, si categories fuera un objeto supongo que habría que utilizar {}

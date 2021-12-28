@@ -1,6 +1,6 @@
 
 
-const getGifs = async ( category ) => {
+const getGifs = async ( category = 'Samurai Champloo' ) => {
   
         const apiKey = 'iMTXO0dBCgozr9iy5Wz1bt9nidIEw2rG'
         const apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURI(category)}&limit=12`

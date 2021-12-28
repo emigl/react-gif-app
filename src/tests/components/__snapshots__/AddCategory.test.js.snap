@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test para el componente AddCategory deberia de renderizar el componente correctamente con snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    autoFocus={true}
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</form>
+`;
